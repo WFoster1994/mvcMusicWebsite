@@ -20,13 +20,13 @@ namespace mvcMusicWebsite.Models
         [StringLength(50), Required]
         public string AlbumName { get; set; }
 
-        [StringLength(50), Required, Display(Name = "TracK Name")]
+        [StringLength(50), Required, Display(Name = "Track Name")]
         public string TrackName { get; set; }
 
         [StringLength(50), Required]
         public string ArtistName { get; set; }
 
-        [StringLength(300)]
+        [StringLength(300), Required]
         public string Description { get; set; }
 
         //Place to find the image
