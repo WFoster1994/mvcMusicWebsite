@@ -13,13 +13,15 @@ namespace mvcMusicWebsite.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Hello " + name;
 
             return View();
         }
 
+        [HttpPost]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

@@ -1,7 +1,22 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+
+<h2>Example Razor Page</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        <label> First Name: </label>
+        <input> type="text" required id="FirstName" name ="FirstName"/>
+    </p>
+    <p>
+        <label>Last Name: </label>
+        <input type="text" required id="LastName" name="LastName"/>
+    </p>
+
+    <p>
+        <input type="submit" value="Submit"/>
+    </p>
+}
